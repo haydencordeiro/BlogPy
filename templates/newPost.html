@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+</title>title here</title>
+{% endblock %}
+
+{% block body %}
+
+
+<hr>
+<div>
+<a href='/posts' class='btn btn-danger'>back</a>
+<br>
+</div>
+<br>
+<br>
+<form action="/posts" method='POST'>
+    <label for="title">Title:</label>
+    <input class='form-control' type='text' name='title' id='title' placeholder="Enter Title">
+    <br>
+    <label for="content">Post:</label>
+    <textarea class="form-control" id="content" rows="3" name='content'placeholder="Enter Content"></textarea>
+ 
+    <br>
+    <label for="author">Author:</label>
+    <input class='form-control' type='text' name='author' id='author'placeholder="Enter Author">
+    <br>
+    <input class='btn btn-secondary' type='submit' value='Post'>
+</form>
+<hr>
+
+
+
+
+{% endblock %}
